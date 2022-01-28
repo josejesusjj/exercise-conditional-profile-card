@@ -23,6 +23,7 @@ import "../style/index.css";
     }
  */
 function render(variables = {}) {
+  //CHECHU:AQUI SI PUEDO Y DEBO EDITAR
   console.log("These are the current variables: ", variables); //print on the console
   // here we ask the logical questions to make decisions on how to build the html
   // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
@@ -44,6 +45,7 @@ function render(variables = {}) {
           </ul>
         </div>
     `;
+  //CHECHU:HASTA AQUI PUEDO EDITAR
 }
 
 /**
