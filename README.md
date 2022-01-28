@@ -27,7 +27,7 @@ $ git clone https://github.com/breatheco-de/exercise-conditional-profile-card.gi
 Note: if you're using c9 make sure you are running in the latest version of node: 
 
 4. Build for the first time: `npm run start`
-
+npm
 5. Start updating the `render` function inside the `app.js` file.
 
 💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
