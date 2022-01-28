@@ -22,8 +22,8 @@ import "../style/index.css";
         city: null
     }
  */
+//CHECHU:AQUI SI PUEDO Y DEBO EDITAR
 function render(variables = {}) {
-  //CHECHU:AQUI SI PUEDO Y DEBO EDITAR
   console.log("These are the current variables: ", variables); //print on the console
   // here we ask the logical questions to make decisions on how to build the html
   // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
@@ -45,9 +45,8 @@ function render(variables = {}) {
           </ul>
         </div>
     `;
-  //CHECHU:HASTA AQUI PUEDO
 }
-
+//CHECHU:HASTA AQUI PUEDO EDITAR
 /**
  * Don't change any of the lines below, here is where we do the logic for the dropdowns
  */
