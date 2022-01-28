@@ -45,7 +45,7 @@ function render(variables = {}) {
           </ul>
         </div>
     `;
-  //CHECHU:HASTA AQUI PUEDO EDITAR
+  //CHECHU:HASTA AQUI PUEDO
 }
 
 /**
