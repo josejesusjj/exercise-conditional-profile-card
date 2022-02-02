@@ -46,7 +46,7 @@ function render(variables = {}) {
         </div>
     `;
 }
-//CHECHU:HASTA AQUI PUEDO EDITAR
+//HASTA AQUI PUEDO EDITAR
 /**
  * Don't change any of the lines below, here is where we do the logic for the dropdowns
  */
@@ -62,14 +62,14 @@ window.onload = function() {
     socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
-    github: "alesanchezr",
+    github: null,
     linkedin: null,
     instagram: null,
-    name: "name,",
-    lastname: "last name",
-    role: "role",
-    country: "country",
-    city: "city"
+    name: null,
+    lastname: null,
+    role: null,
+    country: null,
+    city: null
   };
   render(window.variables); //render the card for the first time
 
