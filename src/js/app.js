@@ -3,7 +3,7 @@ import "../style/index.css";
 /**
  *  EDIT ONLY INSIDE THIS RENDER FUNCTION
  *  This function is called every time the user changes types or changes any input
- * 
+ 
     {
         includeCover: true, // if includeCover is true the algorithm should
         background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da", // this is the url of the image that will used as background for the profile cover
@@ -22,7 +22,7 @@ import "../style/index.css";
         city: null
     }
  */
-//CHECHU:AQUI SI PUEDO Y DEBO EDITAR
+
 function render(variables = {}) {
   console.log("These are the current variables: ", variables); //print on the console
   // here we ask the logical questions to make decisions on how to build the html
@@ -47,10 +47,7 @@ function render(variables = {}) {
         </div>
     `;
 }
-//HASTA AQUI PUEDO EDITAR
-/**
- * Don't change any of the lines below, here is where we do the logic for the dropdowns
- */
+
 window.onload = function() {
   window.variables = {
     // if includeCover is true the algorithm should
