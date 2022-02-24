@@ -34,20 +34,34 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>${variables.name} ${variables.lastname}</h1>
-          <h2> ${variables.role}</h2>
-          <h3>${variables.city}, ${variables.country}</h3>
+          <h1>${variables.name == null ? "Name," : variables.name} ${
+    variables.lastname == null ? "Last Name" : variables.lastname
+  }</h1>
+          <h2>${variables.role == null ? "Your role" : variables.role}</h2>
+          <h3>${variables.city == null ? "City" : variables.city}, ${
+    variables.country == null ? "Country" : variables.country
+  }</h3>
           <ul class="${variables.socialMediaPosition}">
-            <li><a href="https://twitter.com/${variables.twitter}"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/${variables.github}"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/${variables.linkedin}"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/${variables.instagram}"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/${
+              variables.twitter
+            }"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${
+              variables.github
+            }"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/${
+              variables.linkedin
+            }"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${
+              variables.instagram
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
 
         </div>
     `;
 }
-
+/**
+ * Don't change any of the lines below, here is where we do the logic for the dropdowns
+ */
 window.onload = function() {
   window.variables = {
     // if includeCover is true the algorithm should
@@ -63,11 +77,11 @@ window.onload = function() {
     github: null,
     linkedin: null,
     instagram: null,
-    name: "Name, ",
-    lastname: "Last Name",
-    role: "Your role",
-    country: "Country",
-    city: "City"
+    name: null,
+    lastname: null,
+    role: null,
+    country: null,
+    city: null
   };
   render(window.variables); //render the card for the first time
 
